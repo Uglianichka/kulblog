@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ recipe.title }}
+{% endblock %}
+
+{% block body %}
+    <div class="container" xmlns="http://www.w3.org/1999/html">
+    <h1> {{ recipe.title }} </h1>
+      <div class="alert alert-info">
+            <h2> {{ recipe.ingr }}</h2>
+        <p>{{ recipe.text }}</p>
+            <p><b>Дата: {{ recipe.date.date() }}</b></p>
+          <a href="/posts/ {{ recipe.id }}/delete" class="btn btn-primary">Удалить</a>
+            <a href="/posts/ {{ recipe.id }}/update" class="btn btn-primary">Редактировать</a>
+        </div>
+{% endblock %}

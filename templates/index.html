@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+          <h1 class="display-4 fw-normal">Кулинарный блог</h1>
+          <p class="fs-5 text-muted">Кулинарный блог, простые рецепты, простые блюда, авторские рецепты с пошаговыми фото, а также лучшие проверенные рецепты.</p>
+        </div>
+    <main>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Первые блюда</h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Щи</li>
+              <li>Борщи</li>
+              <li>Солянки</li>
+              <li>Рассольники</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Первые блюда</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Вторые блюда</h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Мясные</li>
+              <li>Рыбные</li>
+              <li>Овощные</li>
+              <li>Гарниры</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Вторые блюда</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+         <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Выпечка</h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Торты</li>
+              <li>Пироги</li>
+              <li>Печенье</li>
+              <li>Пирожные</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Выпечка</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+    </div>
+{% endblock %}
